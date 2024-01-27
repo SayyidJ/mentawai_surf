@@ -9,8 +9,7 @@
     <!-- GOogle Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Krona+One&family=Lato&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <!-- GOogle Font -->
   </head>
   <body class="pt-14">
@@ -19,8 +18,7 @@
       <!-- Menu Overlay-->
       <div
         id="nav-overlay"
-        class="p-4 w-[250px] fixed top-14 right-0 bg-zinc-200 bg-opacity-80 z-50 transition-transform translate-x-full duration-300 ease-in-out"
-      >
+        class="visible lg:hidden p-4 w-[250px] fixed top-14 right-0 bg-zinc-200 bg-opacity-80 z-50 transition-transform translate-x-full duration-300 ease-in-out">
         <div class="flex flex-col justify-end pr-2">
           <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Home</a>
           <a
@@ -31,9 +29,11 @@
           <a href="#section-activities" class="hover:bg-zinc-100 py-2 px-4 mx-1"
             >Activities</a
           >
-          <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Pricing</a>
+          <a href="#section-pricing" class="hover:bg-zinc-100 py-2 px-4 mx-1"
+            >Pricing</a
+          >
           <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Booking</a>
-          <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">About</a>
+          <!-- <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">About</a> -->
         </div>
       </div>
       <!-- Menu Overlay-->
@@ -44,98 +44,94 @@
       <!-- Nav -->
       <div id="nav">
         <!-- navbar  -->
-      <div
-      id="navbar"
-      class="bg-zinc-100 py-2 lg:flex items-center px-4 hidden fixed top-0 z-10 w-full transition-all duration-300 ease-in-out"
-    >
-      <!-- logo -->
-      <div class="font-lato text-xl">
-        Mentawai <span class="font-krona">SURF</span>
-      </div>
-      <!-- logo -->
-      <!-- Menu -->
-      <div class="flex-grow flex justify-end pr-2">
-        <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Home</a>
-        <a
-          href="#section-destination"
-          class="hover:bg-zinc-100 py-2 px-4 mx-1"
-          >Destination</a
-        >
-        <a href="#section-activities" class="hover:bg-zinc-100 py-2 px-4 mx-1"
-          >Activities</a
-        >
-        <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Pricing</a>
-        <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Booking</a>
-        <a href="about.html" class="hover:bg-zinc-100 py-2 px-4 mx-1">About</a>
-      </div>
-      <!-- Menu -->
-    </div>
-    <!-- navbar -->
-    <!-- navbar Mobile -->
-    <div
-      id="navbar-mobile"
-      class="bg-zinc-100 py-2 flex items-center pl-4 pr-2 lg:hidden fixed top-0 z-10 w-full transition-all duration-300 ease-out"
-    >
-      <!-- logo -->
-      <div class="font-lato text-xl">
-        Mentawai <span class="font-krona">SURF</span>
-      </div>
-      <!-- logo -->
-      <!-- Menu -->
-      <div class="flex flex-grow justify-end">
-        <!-- Icon Button -->
-        <div class="py-2 mx-1 px-2 cursor-pointer" id="nav-overlay-trigger">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            class="w-6 h-6 stroke-zinc-600"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-            />
-          </svg>
+        <div
+          id="navbar"
+          class="bg-zinc-100 py-2 lg:flex items-center px-4 hidden fixed top-0 z-10 w-full transition-all duration-300 ease-in-out">
+          <!-- logo -->
+          <div class="font-lato text-xl">
+            Mentawai <span class="font-krona">SURF</span>
+          </div>
+          <!-- logo -->
+          <!-- Menu -->
+          <div class="flex-grow flex justify-end pr-2">
+            <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Home</a>
+            <a
+              href="#section-destination"
+              class="hover:bg-zinc-100 py-2 px-4 mx-1"
+              >Destination</a
+            >
+            <a
+              href="#section-activities"
+              class="hover:bg-zinc-100 py-2 px-4 mx-1"
+              >Activities</a
+            >
+            <a href="#section-pricing" class="hover:bg-zinc-100 py-2 px-4 mx-1"
+              >Pricing</a
+            >
+            <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Booking</a>
+            <!-- <a href="about.html" class="hover:bg-zinc-100 py-2 px-4 mx-1"
+              >About</a
+            > -->
+          </div>
+          <!-- Menu -->
         </div>
-        <!-- Icon Button -->
-      </div>
-      <!-- Menu -->
-    </div>
-    <!-- navbar  Mobile-->
+        <!-- navbar -->
+        <!-- navbar Mobile -->
+        <div
+          id="navbar-mobile"
+          class="bg-zinc-100 py-2 flex items-center pl-4 pr-2 lg:hidden fixed top-0 z-10 w-full transition-all duration-300 ease-out">
+          <!-- logo -->
+          <div class="font-lato text-xl">
+            Mentawai <span class="font-krona">SURF</span>
+          </div>
+          <!-- logo -->
+          <!-- Menu -->
+          <div class="flex flex-grow justify-end">
+            <!-- Icon Button -->
+            <div class="py-2 mx-1 px-2 cursor-pointer" id="nav-overlay-trigger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                class="w-6 h-6 stroke-zinc-600">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+              </svg>
+            </div>
+            <!-- Icon Button -->
+          </div>
+          <!-- Menu -->
+        </div>
+        <!-- navbar  Mobile-->
       </div>
       <!-- Nav -->
       <!-- Body -->
       <div id="body">
         <!-- Gif Teaser -->
         <div
-          class="flex justify-center items-center relative -z-10 min-h-[350px] bg-cover bg-yellow-400 bg-[url('../img/surfing_1.gif')]"
-        >
+          class="flex justify-center items-center relative -z-10 min-h-[350px] bg-cover bg-yellow-400 bg-[url('../img/surfing_1.gif')]">
           <div
-            class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent from-70% to-white to-70%"
-          ></div>
+            class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent from-70% to-white to-70%"></div>
         </div>
         <!-- Gif Teaser -->
         <!-- Destination -->
         <section id="section-destination">
           <!-- title -->
           <div
-            class="font-lato text-3xl tracking-wider justify-center flex pb-12 pt-4"
-          >
+            class="font-lato text-3xl tracking-wider justify-center flex pb-12 pt-4">
             Destination
           </div>
           <div
-            class="flex flex-col justify-center items-center py-2 px-8 md:flex-row pb-12"
-          >
+            class="flex flex-col justify-center items-center py-2 px-8 md:flex-row pb-12">
             <img
               class="object-cover w-full max-w-[450px] bg-slate-400 aspect-square"
               src="img/mentawai_island.jpg"
-              alt="mentawai-island"
-            />
+              alt="mentawai-island" />
             <div
-              class="font-lato max-w-[450px] text-justify text-lg sm:text-justify md:pl-8 w-full pt-4 items-center flex flex-col"
-            >
+              class="font-lato max-w-[450px] text-justify text-lg sm:text-justify md:pl-8 w-full pt-4 items-center flex flex-col">
               Para bule yang bosan di rumah. Bosan main hape sambil rebahan?
               Pengen healing dan adventure tapi ngga tau mau kemana?
               <br /><br />Good News, Anda siap pergi ke salah satu tempat
@@ -156,12 +152,10 @@
         <!-- Aktivitas -->
         <section
           id="section-activities"
-          class="flex flex-col items-center px-8 pb-12"
-        >
+          class="flex flex-col items-center px-8 pb-12">
           <!-- title -->
           <div
-            class="font-lato text-3xl tracking-wider justify-center flex pb-12 pt-10"
-          >
+            class="font-lato text-3xl tracking-wider justify-center flex pb-12 pt-10">
             Vacation Activities
           </div>
           <!-- aktivitas row 1 -->
@@ -171,8 +165,7 @@
               <img
                 class="object-cover max-w-[480px] w-full aspect-square"
                 src="img/surfing_2.jpg"
-                alt="surfing"
-              />
+                alt="surfing" />
               <div class="font-krona text-lg text-center pt-8">Surfing</div>
               <div class="font-lato text-zinc-600 text-center py-4">
                 Mendayung di atas papan selancar itu seperti berusaha
@@ -195,8 +188,7 @@
               <img
                 class="object-cover max-w-[480px] w-full aspect-square"
                 src="img/ayunan.jpg"
-                alt="main-ayunan"
-              />
+                alt="main-ayunan" />
               <div class="font-krona text-lg text-center pt-8">Main Ayunan</div>
               <div class="font-lato text-zinc-600 text-center py-4 flex-grow">
                 Ayunan di pantai itu seperti perjalanan emosional yang tak
@@ -218,8 +210,7 @@
               <img
                 class="object-cover max-w-[480px] w-full aspect-square bg-yellow-300"
                 src="img/lihat_sunset.jpg"
-                alt="lihat-sunset"
-              />
+                alt="lihat-sunset" />
               <div class="font-krona text-lg text-center pt-8">
                 Lihat Sunset
               </div>
@@ -249,8 +240,7 @@
               <img
                 class="object-cover max-w-[480px] w-full aspect-square"
                 src="img/fasilitas_1.jpg"
-                alt="fasilitas_1"
-              />
+                alt="fasilitas_1" />
               <div class="font-krona text-lg text-center pt-8">
                 Kolam Renang
               </div>
@@ -277,8 +267,7 @@
               <img
                 class="object-cover max-w-[480px] w-full aspect-square"
                 src="img/lontong.jpg"
-                alt="lontong"
-              />
+                alt="lontong" />
               <div class="font-krona text-lg text-center pt-8">Kuliner</div>
               <div class="font-lato text-zinc-600 text-center py-4 flex-grow">
                 Setelah bermain di kolam renang, perut yang lapar menuntut
@@ -302,8 +291,7 @@
               <img
                 class="object-cover max-w-[480px] w-full aspect-square"
                 src="img/local.jpg"
-                alt="local"
-              />
+                alt="local" />
               <div class="font-krona text-lg text-center pt-8">
                 Budaya Lokal
               </div>
@@ -330,12 +318,162 @@
           <!-- aktivitas row 2 -->
         </section>
         <!-- Aktivitas -->
+        <hr />
+        <!-- Pricing -->
+        <section
+          id="section-pricing"
+          class="lg:max-w-none max-w-[450px] mx-auto">
+          <!-- title -->
+          <div
+            class="font-lato text-3xl tracking-wider justify-center flex pb-12 pt-10">
+            Pricing
+          </div>
+          <!-- title -->
+          <!-- group 1 -->
+          <div class="flex flex-col px-8 gap-4 lg:flex-row">
+            <!-- item 1 -->
+            <div class="py-4">
+              <div>
+                <img src="img/room_1.jpg" alt="" />
+              </div>
+              <div class="font-krona pt-4">Nama Room</div>
+              <div class="flex">
+                <div class="flex-1">
+                  <div class="font-inter text-sm text-zinc-600">
+                    Room Capacity
+                  </div>
+                  <div class="flex">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 fill-zinc-500 stroke-none">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+
+                    <div class="font-inter text-sm text-zinc-600">4</div>
+                  </div>
+                </div>
+                <div
+                  class="justify-center font-inter text-sm flex-1 flex flex-col items-center">
+                  <div>Minimum Stay</div>
+                  <div>1 Night(s)</div>
+                </div>
+                <div
+                  class="justify-center text-sm font-inter flex flex-col flex-1 items-end">
+                  <div>Price for 1 night</div>
+                  <div class="font-bold">$580.00</div>
+                </div>
+              </div>
+            </div>
+            <!-- item 1 -->
+            <!-- item 2 -->
+            <!-- item 1 -->
+            <div class="py-4">
+              <div>
+                <img src="img/room_1.jpg" alt="" />
+              </div>
+              <div class="font-krona pt-4">Nama Room</div>
+              <div class="flex">
+                <div class="flex-1">
+                  <div class="font-inter text-sm text-zinc-600">
+                    Room Capacity
+                  </div>
+                  <div class="flex">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 fill-zinc-500 stroke-none">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+
+                    <div class="font-inter text-sm text-zinc-600">4</div>
+                  </div>
+                </div>
+                <div
+                  class="justify-center font-inter text-sm flex-1 flex flex-col items-center">
+                  <div>Minimum Stay</div>
+                  <div>1 Night(s)</div>
+                </div>
+                <div
+                  class="justify-center text-sm font-inter flex flex-col flex-1 items-end">
+                  <div>Price for 1 night</div>
+                  <div class="font-bold">$580.00</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 2 -->
+            <!-- item 3 -->
+            <!-- item 1 -->
+            <div class="py-4">
+              <div>
+                <img src="img/room_1.jpg" alt="" />
+              </div>
+              <div class="font-krona pt-4">Nama Room</div>
+              <div class="flex">
+                <div class="flex-1">
+                  <div class="font-inter text-sm text-zinc-600">
+                    Room Capacity
+                  </div>
+                  <div class="flex">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 fill-zinc-500 stroke-none">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+
+                    <div class="font-inter text-sm text-zinc-600">4</div>
+                  </div>
+                </div>
+                <div
+                  class="justify-center font-inter text-sm flex-1 flex flex-col items-center">
+                  <div>Minimum Stay</div>
+                  <div>1 Night(s)</div>
+                </div>
+                <div
+                  class="justify-center text-sm font-inter flex flex-col flex-1 items-end">
+                  <div>Price for 1 night</div>
+                  <div class="font-bold">$580.00</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 3 -->
+          </div>
+          <!-- group 1 -->
+        </section>
+        <!-- Pricing -->
         <footer
-          class="bg-zinc-700 h-[150px] flex flex-col items-center justify-center"
-        >
-          <div class="text-white text-center">Bagian Footer</div>
-          <div class="text-white text-sm text-center">
-            Made with love and passion @2024
+          class="bg-zinc-700 pt-12 flex flex-col items-center justify-center">
+          <div
+            class="flex flex-col lg:flex-row w-[600px] justify-evenly text-white text-center">
+            <div class="cursor-pointer">FAQ</div>
+            <div class="cursor-pointer">COLABORATION</div>
+            <div class="cursor-pointer">CONDITION</div>
+            <div class="cursor-pointer">CONTACT</div>
+          </div>
+          <div
+            class="pt-4 pb-36 text-zinc-50 text-2xl text-center font-lato tracking-wider">
+            Mentawai <span class="font-krona tracking-tighter">Surfing</span>
           </div>
         </footer>
       </div>
