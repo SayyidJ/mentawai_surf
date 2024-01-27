@@ -26,23 +26,70 @@
       <!-- logo -->
       <!-- Menu -->
       <div class="flex-grow flex justify-end pr-2">
-        <a href="#" class="hover:bg-zinc-200 py-2 px-4 mx-1">Home</a>
-        <a href="#" class="hover:bg-zinc-200 py-2 px-4 mx-1">Facility</a>
-        <a href="#" class="hover:bg-zinc-200 py-2 px-4 mx-1">Pricing</a>
-        <a href="#" class="hover:bg-zinc-200 py-2 px-4 mx-1">About</a>
+        <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Home</a>
+        <a href="#section-destination" class="hover:bg-zinc-100 py-2 px-4 mx-1"
+          >Destination</a
+        >
+        <a href="#section-activities" class="hover:bg-zinc-100 py-2 px-4 mx-1"
+          >Activities</a
+        >
+        <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Pricing</a>
+        <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Booking</a>
+        <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">About</a>
       </div>
       <!-- Menu -->
     </div>
     <!-- Appbar -->
     <!-- Appbar Mobile -->
-    <div class="bg-zinc-100 py-2 flex items-center px-4 lg:hidden">
+    <div class="bg-zinc-100 py-2 flex items-center pl-4 pr-2 lg:hidden">
       <!-- logo -->
       <div class="font-lato text-xl">
         Mentawai <span class="font-krona">SURF</span>
       </div>
       <!-- logo -->
       <!-- Menu -->
-
+      <div class="flex flex-grow justify-end">
+        <!-- Icon Button -->
+        <div class="py-2 mx-1 px-2 cursor-pointer" id="overlay-trigger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            class="w-6 h-6 stroke-zinc-600"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+            />
+          </svg>
+        </div>
+        <!-- Icon Button -->
+        <!-- Menu Overlay-->
+        <div
+          id="overlay"
+          class="p-4 w-[250px] fixed top-14 right-0 bg-zinc-200 bg-opacity-80 z-50 transition-transform translate-x-full duration-300 ease-in-out"
+        >
+          <div class="flex flex-col justify-end pr-2">
+            <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Home</a>
+            <a
+              href="#section-destination"
+              class="hover:bg-zinc-100 py-2 px-4 mx-1"
+              >Destination</a
+            >
+            <a
+              href="#section-activities"
+              class="hover:bg-zinc-100 py-2 px-4 mx-1"
+              >Activities</a
+            >
+            <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Pricing</a>
+            <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">Booking</a>
+            <a href="#" class="hover:bg-zinc-100 py-2 px-4 mx-1">About</a>
+          </div>
+        </div>
+        <!-- Menu Overlay-->
+      </div>
       <!-- Menu -->
     </div>
     <!-- Appbar  Mobile-->
@@ -57,7 +104,7 @@
 
     <hr />
     <!-- Destination -->
-    <section>
+    <section id="section-destination">
       <!-- title -->
       <div
         class="font-lato text-3xl tracking-wider justify-center flex pb-12 pt-10"
@@ -95,7 +142,10 @@
     <hr />
     <hr />
     <!-- Aktivitas -->
-    <section class="flex flex-col items-center px-8 pb-12">
+    <section
+      id="section-activities"
+      class="flex flex-col items-center px-8 pb-12"
+    >
       <!-- title -->
       <div
         class="font-lato text-3xl tracking-wider justify-center flex pb-12 pt-10"
@@ -262,5 +312,5 @@
       <div class="text-white text-center">Made with love and passion @2024</div>
     </footer>
   </body>
-  <script src="script/hide_scrolling_nav.js"></script>
+  <script src="script/nav.js"></script>
 </html>
