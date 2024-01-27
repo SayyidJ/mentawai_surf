@@ -10,3 +10,13 @@ window.addEventListener("scroll", function () {
   }
   lastScrollTop = scrollTop;
 });
+
+//toggle mobile nav
+document.addEventListener('DOMContentLoaded', function () {
+  const overlayTrigger = document.getElementById('overlay-trigger');
+  const overlay = document.getElementById('overlay');
+
+  overlayTrigger.addEventListener('click', function () {
+      overlay.classList.toggle('translate-x-full');
+  });
+});
